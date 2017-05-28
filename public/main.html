@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <metahttp-equiv="Content-Type"content="text/html; charset=utf-8">
+    <title>chatting app</title>
+    <script scr="/socket.io/socket.io.js"></script>
+    <script type="text/javascript"src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <linkrel="stylesheet"href="/stylesheets/style.css">
+    <script type="text/javascript">
+
+      function moverandom(){
+        location.href = "/randomchat";
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <fieldset id="room_select">
+      <legend>  select one  </legend>
+      <input id ="random" type="button" value="1:1 랜덤 채팅" onclick="moverandom()">
+      <input id ="Cond"type="button"value="1:1 조건 채팅">
+    </fieldset>
+    <div class="wait" style="display:none">
+         <div>상대방 기다리는 중...</div>
+         <button id="btnCancelRequest" class="btn">취소</button>
+     </div>
+
+  </body>
+</html>

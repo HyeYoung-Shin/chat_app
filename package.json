@@ -18,6 +18,7 @@
   "homepage": "https://github.com/HyeYoung-Shin/chat_app#readme",
   "dependencies": {
     "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "socket.io": "^2.0.1"
   }
 }
